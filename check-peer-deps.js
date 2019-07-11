@@ -237,6 +237,8 @@ const checkPeerDependencies = (peerDependencies, name) => {
         const maxUsable = semver.maxSatisfying(versions, peerDepRange);
         console.log(`Package dependencies can satisfy the peerDependency? ${maxUsable ? 'Yes' : 'No'}`);
       }
+
+      process.exitCode = 1;
     }
   });
 };
