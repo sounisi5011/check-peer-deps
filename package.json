@@ -1,5 +1,5 @@
 {
-  "name": "check-peer-deps",
+  "name": "@sounisi5011/check-peer-deps",
   "version": "1.2.2",
   "description": "Verifies that the peerDependency requirements of all top level dependencies are satisfied.",
   "author": "Landon Abney <landonabney@gmail.com>",
