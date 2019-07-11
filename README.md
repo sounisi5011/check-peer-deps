@@ -1,16 +1,24 @@
 # check-peer-deps
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Arcanemagus/check-peer-deps.svg)](https://greenkeeper.io/)
+[![GitHub License](https://img.shields.io/github/license/sounisi5011/check-peer-deps.svg)][github-license]
+[![Build Status](https://travis-ci.com/sounisi5011/check-peer-deps.svg?branch=master)](https://travis-ci.com/sounisi5011/check-peer-deps)
+
+[github-license]: https://github.com/sounisi5011/check-peer-deps/blob/master/LICENSE
 
 Verifies that the `peerDependency` requirements of all top level dependencies
 are satisfied.
+
+## Forked package
+
+This package is a fork of [Arcanemagus/check-peer-deps](https://github.com/Arcanemagus/check-peer-deps).
+The main purpose is the resolve of Issue [#11](https://github.com/Arcanemagus/check-peer-deps/issues/11).
 
 ## Installation
 
 You can install this on your system with:
 
 ```sh
-npm i -g check-peer-deps
+npm install sounisi5011/check-peer-deps#semver:^1.2.2
 ```
 
 Please note that this utility requires `npm` to be available.
