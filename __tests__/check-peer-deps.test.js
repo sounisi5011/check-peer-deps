@@ -24,14 +24,18 @@ test('Finds nothing wrong with a good dependency tree', async () => {
 });
 
 test('Finds the missing dependencies in a broken tree', async () => {
-  expect.assertions(3);
-  const output = await runCPD([], { cwd: path.join(fixtures, 'missingDep') });
-  expect(output.stdout).toBe('');
-  const issues = output.stderr.split('\n');
-  expect(issues[0]).toBe("A dependency satisfying eslint-config-airbnb-base's "
-    + "peerDependency of 'eslint@^4.9.0' was not found!");
-  expect(issues[1]).toBe("A dependency satisfying eslint-config-airbnb-base's "
-    + "peerDependency of 'eslint-plugin-import@^2.7.0' was not found!");
+  expect.assertions(4);
+  try {
+    await runCPD([], { cwd: path.join(fixtures, 'missingDep') });
+  } catch (output) {
+    expect(output.code).toBe(1);
+    expect(output.stdout).toBe('');
+    const issues = output.stderr.split('\n');
+    expect(issues[0]).toBe("A dependency satisfying eslint-config-airbnb-base's "
+      + "peerDependency of 'eslint@^4.9.0' was not found!");
+    expect(issues[1]).toBe("A dependency satisfying eslint-config-airbnb-base's "
+      + "peerDependency of 'eslint-plugin-import@^2.7.0' was not found!");
+  }
 });
 
 test('Finds nothing wrong with no peerDependencies in the tree', async () => {
