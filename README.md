@@ -1,6 +1,9 @@
 # check-peer-deps
 
+[![GitHub License](https://img.shields.io/github/license/sounisi5011/check-peer-deps.svg)][github-license]
 [![Build Status](https://travis-ci.com/sounisi5011/check-peer-deps.svg?branch=master)](https://travis-ci.com/sounisi5011/check-peer-deps)
+
+[github-license]: https://github.com/sounisi5011/check-peer-deps/blob/master/LICENSE
 
 Verifies that the `peerDependency` requirements of all top level dependencies
 are satisfied.
