@@ -5,6 +5,11 @@
 Verifies that the `peerDependency` requirements of all top level dependencies
 are satisfied.
 
+## Forked package
+
+This package is a fork of [Arcanemagus/check-peer-deps](https://github.com/Arcanemagus/check-peer-deps).
+The main purpose is the resolve of Issue [#11](https://github.com/Arcanemagus/check-peer-deps/issues/11).
+
 ## Installation
 
 You can install this on your system with:
