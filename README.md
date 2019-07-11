@@ -1,6 +1,6 @@
 # check-peer-deps
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Arcanemagus/check-peer-deps.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/sounisi5011/check-peer-deps.svg?branch=master)](https://travis-ci.com/sounisi5011/check-peer-deps)
 
 Verifies that the `peerDependency` requirements of all top level dependencies
 are satisfied.
