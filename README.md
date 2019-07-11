@@ -15,7 +15,7 @@ The main purpose is the resolve of Issue [#11](https://github.com/Arcanemagus/ch
 You can install this on your system with:
 
 ```sh
-npm i -g check-peer-deps
+npm install sounisi5011/check-peer-deps#semver:^1.2.2
 ```
 
 Please note that this utility requires `npm` to be available.
